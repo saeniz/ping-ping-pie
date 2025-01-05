@@ -1,0 +1,153 @@
+.header {
+    position: relative;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.brand-title {
+    font-family: 'Apple Chancery','Segoe Script', cursive;
+    color: #333;
+    font-size: 45px;
+    text-align: center;
+    width: auto;
+    max-width: 50%;
+}
+
+.brand-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff3366;
+    font-size: 20px;
+    color: white;
+    padding: 8px 40px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/*nav bar*/
+.nav {
+    margin-top: 15px;
+    background-color: #e0e0e0;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+}
+
+.nav a{
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}    
+
+body {
+    background-image: url("pie.png"); /* Light background color */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    }
+   
+.container {
+    display: flex;
+    padding: 50px; /* Keep padding as is or adjust */
+    width: 90%; /* Set to 90% of its parent container */
+    max-width: none; /* Optional: Set a maximum width */
+    border-radius: 10px ;
+    margin: 20px auto;
+    background-color: #f51878; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            }
+
+.details{float: right;
+    color: white;
+    }
+
+.container img {
+    float: left; /* Float the image to the left */
+    width: auto;
+    max-width: 450px; /* Set a max width for the image */
+    max-height: 450px;
+    margin-right: 50px; /* Space between image and text */
+    border: 15px solid white;
+    border-radius: 10px;
+        }
+        
+h3 {
+    font-family: 'Lucida Console', monospace;
+    color: white; /* Darker text color for headings */
+    margin-bottom: 20px;
+        }
+p a {
+    color: white; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    }
+    
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+        }
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+    @media screen and (max-width: 768px) {
+        .header {
+            padding: 13px 0;
+        }
+    
+        .brand-title {
+            font-size: 25px;
+        }
+    
+        .brand-logo {
+            font-size: 13px;
+            padding: 2.7px 25px;
+        }
+        
+        .nav a{
+            margin: 0 5px;
+        }
+    
+        .container {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .container img {
+            float: none;
+            max-width: 100%;
+            margin: 0 0 20px 0;
+            border-width: 8px;
+        }
+    
+        .details {
+            float: none;
+            width: 100%;
+        }
+    
+        ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    
+        iframe {
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+    
+        .container {
+            padding: 15px;
+            margin: 10px auto;
+        }
+    }
+        

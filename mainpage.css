@@ -1,0 +1,301 @@
+/*header*/
+.header {
+    position: relative;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.brand-title {
+    font-family: 'Apple Chancery','Segoe Script', cursive;
+    color: #333;
+    font-size: 45px;
+    text-align: center;
+    width: auto;
+    max-width: 50%;
+}
+
+.brand-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff3366;
+    font-size: 20px;
+    color: white;
+    padding: 8px 40px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/*nav bar*/
+.nav {
+    margin-top: 15px;
+    background-color: #e0e0e0;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+}
+
+.nav a{
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}    
+
+/*main content - left*/
+.welcome-text {
+    font-size: clamp(2rem, 5vw, 3rem);  /*2vw - 2% of viewport width*/
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pink-text {
+    color: #ff3366;
+}
+
+.description {
+    font-style: italic;
+    font-family: serif;
+    margin: clamp(15px, 3vw, 20px) 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.catchphrase-text {
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.Menubtn {
+    border-radius: 25px;
+    border: 1px solid #ff3366;
+    padding: 8px 25px;
+    background-color: #ff3366;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Search Bar JQuery UI*/
+#tags {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 2px solid #ff3366;
+    border-radius: 15px;
+    outline: none;
+    margin-left: 15px;
+    margin-top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#tags:focus {       /*when click*/
+    border-color: #ff3366;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* Styling the autocomplete dropdown */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    width: 90% !important; /* Ensure dropdown doesn't overflow on mobile */
+}
+
+.ui-menu-item {     /*per box/item*/
+    padding: 8px 15px !important;
+    font-size: 14px;
+}
+
+.ui-menu-item:hover {
+    background-color: #f0f0f0 !important;
+    border: none !important;
+}
+
+/*main content - right*/
+.price-tag {
+    background-color: #ff3366;
+    color: white;
+    font-family: serif;
+    border-radius: 100%;
+    padding: 0;
+    width: 178px;
+    height: 178px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    transform: translate(20%, -20%);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); /* Creates a shadow to the right-bottom */
+
+    /* Center the content inside the circle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shepherd-text {
+    font-size: 30px; 
+    font-style: italic; 
+    font-family: cursive; 
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.price-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+}
+
+.pie-image-container {
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-left: 35px;
+
+}
+
+.shepherd-pie-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 -80px;
+    margin-top: 45px;
+    margin-bottom: -50px;
+}
+
+/*footer*/
+.footer {
+    background-color: #ff3366;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    flex-wrap: wrap;    /*Links wrap on smaller screens*/
+}
+
+.icon {
+    color: white;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .nav a{
+        margin: 0 10px;
+    }
+
+    .pie-image-container {
+        margin-left: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .shepherd-pie-img {
+        margin: 0 -40px;  /* Reduced negative margin */
+        margin-top: 25px; /* Reduced top margin */
+        margin-bottom: -30px; /* Reduced bottom margin */
+    }
+
+    .price-tag {
+        width: 120px;  /* Smaller price tag */
+        height: 120px;
+        top: 10px;
+        right: 10px;
+        transform: translate(30%, -30%);
+    }
+
+    .shepherd-text {
+        font-size: 20px;  /* Smaller font size */
+    }
+
+    .price-text {
+        font-size: 14px;  /* Smaller font size */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575px) {
+    .header {
+        padding: 13px 0;
+    }
+
+    .brand-title {
+        font-size: 25px;
+    }
+
+    .brand-logo {
+        font-size: 13px;
+        padding: 2.7px 25px;
+    }
+    
+    .nav a{
+        margin: 0 5px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #tags {
+        margin-left: 0;
+        max-width: none;
+    }
+
+    .ui-widget {
+        width: 100%;
+    }
+
+    .Menubtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pie-image-container {
+        max-width: 70%;
+    }
+
+    .shepherd-pie-img {
+        margin: 0 -20px;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .price-tag {
+        width: 90px;
+        height: 90px;
+        top: 5px;
+        right: 5px;
+        transform: translate(30%, -30%);
+    }
+
+    .shepherd-text {
+        font-size: 13px;
+    }
+
+    .price-text {
+        font-size: 10px;
+    }
+}

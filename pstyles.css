@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Domine:wght@400..700&display=swap" rel="stylesheet">');
+.header {
+    position: relative;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.brand-title {
+    font-family:'Apple Chancery', 'Segoe Script', cursive;
+    font-size: 45px;
+    color: #333;
+    text-align: center;
+    width: auto;
+    max-width: 50%;
+   margin-bottom: 8px;
+}
+.brand-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff3366;
+    font-size: 20px;
+    color: white;
+    padding: 8px 40px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+    bottom: 0.1000;
+}
+/*nav bar*/
+.nav {
+    margin-top: 15px;
+    background-color: #e0e0e0;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+}
+.nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+/*set background image for body*/
+body{
+    background-image: url('images/ca11a464b36872e3407bd6c34f8f25a0.jpg');
+}
+.icon{
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    object-fit: contain; /* Ensure the image fits within the dimensions */
+    margin-right: 10px; /* Add spacing between the icon and text */
+    vertical-align: middle;
+}
+h1{
+    margin-bottom: 20px;
+    font-family:'Cedarville Cursive';
+    font-size: 350%;
+}
+p{
+    margin-block: 20px 10px;
+    font-family:"Domine", serif;
+    font-size: 125%;
+    font-style: normal;
+    padding: 10px 8px 15px; /* Define padding area */
+    background-clip: padding-box; /* Makes the padding colorful */
+    color: #000; /* Ensure text remains readable */
+    border-radius: 19px; /* Optional: Add rounded corners */
+    border: 3px  #fc175c; /* To add a gap between padding and border */   
+    border-style:dotted;
+    width: auto; /*adjust width dynamically*/
+    max-width:90%;
+    min-width: 150px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.container.details.contact{
+    margin-block: 40px 25px;
+}
+
+/*mobile responsive styles*/
+
+/* Extra small devices */
+@media screen and (max-width: 768px){
+    .header{
+        padding: 13px 0;
+    }
+    .brand-title{
+        font-size: 25px;
+    }
+    .brand-logo{
+        font-size: 13px;
+        padding: 2.7px 25px;
+    }
+    .nav a{
+        margin: 0 5px;
+    }
+}
+
+  

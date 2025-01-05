@@ -1,0 +1,177 @@
+
+
+.background{
+  background-image: url("pie.png"); /* Light background color */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+      
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-category {
+  flex: 1;
+}
+
+.section-title {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item.pink {
+  background-color: #ff4d8d;
+}
+
+.menu-item.gray {
+  background-color: #e0e0e0;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-grid a {
+  text-decoration: none;
+}
+
+.title {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item .title {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.menu-item.gray .title {
+  padding: 10px;
+  text-align: center;
+   color: #ff4d8d;
+}
+
+.wsicon{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  width: 60px;
+  height: 60px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+
+.wsicon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+
+  
+
+/* Background Image */
+.background::before {
+  background-size: cover;
+}
+
+/* Main Content Adjustments */
+.main-content {
+  padding: 10px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-category {
+  width: 100%;
+  margin: 0;
+}
+
+.menu-item {
+  width: 100%;
+  margin: 0;
+}
+
+.menu-item img {
+  height: 150px;
+}
+
+.section-title {
+  font-size: 1.5em;
+}
+}
+
+
+
+/* Extra small devices */
+@media (max-width: 575px) {
+
+
+.brand-title {
+  font-size: 25px;
+}
+
+.brand-logo {
+  font-size: 13px;
+  padding: 2.7px 25px;
+}
+
+.nav a{
+  margin: 0 5px;
+}
+
+/* Main Content Adjustments */
+.menu-item img {
+  height: 120px;
+}
+
+.section-title {
+  font-size: 1.2em;
+}
+ 
+}
