@@ -115,7 +115,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none !important;
-    width: 90% !important; /* Ensure dropdown doesn't overflow on mobile */
+    width: none !important; /* Ensure dropdown doesn't overflow on mobile */
 }
 
 .ui-menu-item {     /*per box/item*/
